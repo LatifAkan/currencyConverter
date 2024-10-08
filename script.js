@@ -1,6 +1,13 @@
-function calc() {
+function calcEuroToDollar() {
     let euro = euroField.value;
-    let result = euro * 0.981;
+    let result = euro * 1.1;
 
-    usd.value = result.toFixed(2).replace('.',',');
+    usdField.value = result.toFixed(2).replace('.', ',');
+}
+
+function calcDollarToEuro() {
+    let dollar = usdField.value;
+    let result = dollar * 0.91;
+
+    euroField.value = result.toFixed(2).replace('.', ',');
 }
